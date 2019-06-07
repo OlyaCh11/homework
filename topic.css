@@ -39,12 +39,12 @@ body {
 
 .messages-wrapper {
     padding: 10px;
-    height: 530px;
+    height: calc(100% - 70px);
 }
 
 .messages-container {
     height: 100%;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .message {
@@ -53,18 +53,19 @@ body {
 
 .message-info {
     display: flex;
-    width: 220px;
+    width: 200px;
     justify-content: center;
     align-items: center;
+    border-right: 1px solid rgb(20, 20, 20);
 }
 
 .user {
     height: 48px;
     width: 48px;
     background-color: rgb(183, 244, 250);
-    border-radius: 24px;
+    border-radius: 50%;
     text-align: center;
-    line-height: 46px;
+    line-height: 48px;
     margin-right: 8px;
 }
 
@@ -73,7 +74,7 @@ body {
     flex-direction: column;
     justify-content: center;
     padding: 8px;
-    width: calc(100% - 220px);
+    max-width: calc(100% - 200px);
 }
 
 .message-text {
@@ -85,5 +86,4 @@ body {
 .author {
     margin-left: 8px;
 }
-
 
