@@ -38,7 +38,6 @@ body {
 }
 
 .messages-wrapper {
-    padding: 10px;
     height: calc(100% - 70px);
 }
 
