@@ -10,11 +10,12 @@ body {
     height: 600px;
     width: 800px;
     background-color: rgb(153, 198, 204);
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
     height: 70px;
-    width: 100%;
     background-color: rgb(183, 244, 250);
     padding: 10px;
     position: relative;
@@ -37,12 +38,8 @@ body {
     margin-right: 16px;
 }
 
-.messages-wrapper {
-    height: calc(100% - 70px);
-}
-
 .messages-container {
-    height: 100%;
+    height: calc(100% - 70px);
     overflow-y: auto;
 }
 
